@@ -1,0 +1,33 @@
+{
+  "name": "zapier-ts-app",
+  "version": "1.0.0",
+  "description": "zapier-ts-app for the Zapier platform.",
+  "author": "Ikbel <ikbel.kira@live.fr>",
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "test": "jest",
+    "fmt": "prettier --write *.{js,ts,json} ./**/*.{js,ts,json}"
+  },
+  "engines": {
+    "node": "8.10.0",
+    "npm": ">=5.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "zapier-platform-core": "8.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/nock": "^11.1.0",
+    "@types/node": "^12.12.17",
+    "jest": "^24.9.0",
+    "nock": "^11.3.2",
+    "prettier": "^1.18.2",
+    "should": "^13.2.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  }
+}

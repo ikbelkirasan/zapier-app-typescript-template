@@ -1,0 +1,10 @@
+build
+lib
+docs
+node_modules
+*.log
+.environment
+.env
+test.http
+.zapierapprc
+playground

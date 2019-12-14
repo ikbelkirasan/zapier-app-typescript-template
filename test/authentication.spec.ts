@@ -1,4 +1,4 @@
-import { should, describe, appTester, App, mock } from "./helpers";
+import { describe, appTester, App, mock } from "./helpers";
 
 describe("Authentication", () => {
   it("should fetch an access token", async () => {
@@ -16,9 +16,7 @@ describe("Authentication", () => {
       });
 
     const promise = appTester(App.authentication.sessionConfig.perform, bundle);
-
-    const response = await should(promise).be.resolved();
-    should(response).match({
+    await expect(promise).resolves.toEqual({
       access_token: "a_token",
     });
   });

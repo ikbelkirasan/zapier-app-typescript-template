@@ -1,4 +1,3 @@
-import should from "should";
 import nock from "nock";
 import zapier from "zapier-platform-core";
 import App from "../src";
@@ -30,16 +29,8 @@ export function describe(title: string, cb: () => void) {
       nock.disableNetConnect();
     });
 
-    try {
-      cb();
-    } catch (error) {
-      const errorMessage = error.message
-        .trim()
-        .replace(/\\n/g, "\n")
-        .replace(/\\"/g, '"');
-      throw new Error(errorMessage);
-    }
+    cb();
   });
 }
 
-export { App, should, zapier };
+export { App, zapier };

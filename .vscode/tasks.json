@@ -4,7 +4,7 @@
     {
       "label": "Build",
       "type": "npm",
-      "script": "dev",
+      "script": "build",
       "problemMatcher": "$tsc-watch",
       "isBackground": true,
       "presentation": {
@@ -13,9 +13,6 @@
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "runOptions": {
-        "runOn": "folderOpen"
       }
     }
   ]

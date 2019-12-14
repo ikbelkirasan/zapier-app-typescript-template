@@ -6,7 +6,6 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc --watch",
     "build": "tsc",
     "test": "jest",
     "fmt": "prettier --write *.{js,ts,json} ./**/*.{js,ts,json}"

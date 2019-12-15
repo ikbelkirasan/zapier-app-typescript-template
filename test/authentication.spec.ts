@@ -15,8 +15,11 @@ describe("Authentication", () => {
         access_token: "a_token",
       });
 
-    const promise = appTester(App.authentication.sessionConfig.perform, bundle);
-    await expect(promise).resolves.toEqual({
+    const response = await appTester(
+      App.authentication.sessionConfig.perform,
+      bundle,
+    );
+    expect(response).toEqual({
       access_token: "a_token",
     });
   });

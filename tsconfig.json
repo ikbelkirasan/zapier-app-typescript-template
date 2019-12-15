@@ -6,7 +6,7 @@
     "resolveJsonModule": true,
     "outDir": "./lib",
     "strict": true,
-    "sourceMap": true,
+    // "sourceMap": true,
     "forceConsistentCasingInFileNames": true
   },
   "include": ["./src", "./test"],
